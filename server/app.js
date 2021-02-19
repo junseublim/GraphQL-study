@@ -3,6 +3,9 @@ const { graphqlHTTP } = require('express-graphql');
 const schema = require('./schema/schema');
 const mongoose = require("mongoose");
 const app = express();
+const cors = require('cors');
+
+app.use(cors());
 
 mongoose.connect('mongodb+srv://junslim11:password11@cluster0.zm7zm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
 mongoose.connection.once('open', () => {

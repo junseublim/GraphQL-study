@@ -5,6 +5,7 @@ GraphQL study based on freeCodeCamp.org lecture https://www.youtube.com/watch?v=
 ```
 $ cd client
 $ npm install
+$ npm build
 $ cd ../server
 $ npm install
 $ node app 
@@ -20,7 +21,7 @@ $ node app
 | Author     | name: string, age: string,                |
 | Book       | name: string, genre: string, authorId: ID |
 
-### GraphQl Queries
+### GraphQL Queries
 
 1. Book 
 ```graphql
